@@ -5,14 +5,6 @@ body {
     font-family: "Open Sans",sans-serif;
 }
 
-.bg-black {
-    background: #000;
-}
-
-.bg-red {
-    background: #CA2730;
-}
-
 ol, ul {
     padding: 0;
 }
@@ -26,6 +18,21 @@ ul, li {
 li {
     padding: 0 10px;
 }
+
+a, a:hover, a:focus {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.bg-black {
+    background: #000;
+}
+
+.bg-red {
+    background: #CA2730;
+}
+
+
 
 .dsply-inln {
     display: inline;
