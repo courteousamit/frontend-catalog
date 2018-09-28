@@ -1,0 +1,37 @@
+.product-info {
+    margin-top: 50px;
+    @media (max-width: 991px) {
+        margin-top: 5px;
+    }
+
+}
+
+.product-action {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.full-width-list {
+    .product-thumb {
+        width: auto;
+        @media (max-width: 991px) {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+
+}
+
+.single-product.full-width-list {
+    display: flex;
+    @media (max-width: 991px) {
+        display: block;
+    }
+}
+
+.product-info-section {
+
+    @media(min-width: 1200px) and (max-width: 1345px) {
+        width: 100%;
+    }
+}

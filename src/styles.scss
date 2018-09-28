@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+body {
+    font-family: "Open Sans",sans-serif;
+}
+
+.bg-black {
+    background: #000;
+}
+
+.bg-red {
+    background: #CA2730;
+}
+
+ol, ul {
+    padding: 0;
+}
+
+ul, li {
+    list-style: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+li {
+    padding: 0 10px;
+}
+
+.dsply-inln {
+    display: inline;
+}
+
+.vrtcl-algn-txt-btm {
+    vertical-align: text-bottom;
+}
+
+.fnt-sz-9 {
+    font-size: 9px;
+}
+
+.mrgn-tp-btm-15 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+

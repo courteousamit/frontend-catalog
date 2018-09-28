@@ -1,0 +1,101 @@
+<section id="page-content" class="page-wrapper">
+
+
+  <!-- Start category page area -->
+  <div class="tm-section bg-white category-page-area pt-80">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+          <!-- Start category page left sidebar -->
+          <app-product-list-sidebar></app-product-list-sidebar>
+          <!-- End category page right sidebar -->
+        </div>
+        <div class="col-md-9 col-lg-9 col-sm-8 col-xs-12">
+          <!-- Start category page right sidebar -->
+          <div class="cp-right-sidebar">
+            <h4>
+              Notebooks
+            </h4>
+            <div>
+              <app-product-filter></app-product-filter>
+            </div>
+            <!-- Start category page product lists -->
+            <div class="cp-right-products">
+              <div class="product-list">
+                <!-- Start listview products -->
+                <div id="list-view">
+                  <div class="row">
+                    <!-- Start Single product -->
+                    <div *ngFor="let item of catalogLine">
+                      <div class="col-md-12 col-sm-12 col-lg-12 col-xs-12 mrgn-tp-btm-15">
+                        <div class="single-product full-width-list">
+                          <div class="product-thumb">
+                            <span>
+                              <img class="front-img" src="{{item.ProductImageUrl}}" alt="img">
+                            </span>
+                          </div>
+                          <div class="product-info">                            
+                                <div class="col-md-12 col-lg-5 col-sm-12 col-xs-12 product-info-section">
+                                    <div class="pro-title">
+                                      <span>CODE: </span>
+                                      <h4 class="dsply-inln">{{item.ProductId}}</h4>
+                                    </div>
+                                    <p>{{item.ProductLabel}}</p>
+                                  </div>
+      
+                                  <div class="col-md-12 col-lg-7 col-sm-12 col-xs-12 product-info-section">
+                                    <ul class="product-action">
+                                      <li>
+                                        <span class="fnt-sz-9">EST.DELIVERY</span>
+                                        <div>{{itemDeliveryDate}}</div>
+                                      </li>
+                                      <li>
+                                        <span class="fnt-sz-9">STOCK</span>
+                                        <div>{{item.QuantityAvailable}}</div>
+                                      </li>
+                                      <li>
+                                        <span class="fnt-sz-9">QTY</span>
+                                        <div>{{itemQuantityRequired}}</div>
+                                      </li>
+                                      <li>
+                                        <span class="fnt-sz-9">DELIVERY COST</span>
+                                        <div>{{itemDeliveryCost}}</div>
+                                      </li>
+                                      <li>
+                                        <span class="fnt-sz-9">UNIT PRICE</span>
+                                        <div>{{item.UnitPrice}}</div>
+                                      </li>
+                                      <li>
+                                        <span class="fnt-sz-9">TOTAL PRICE</span>
+                                        <div>{{itemTotalPrice}}</div>
+                                      </li>
+                                      <li>
+                                          <a (click)="addToCart()">
+                                              <i class="material-icons">add_shopping_cart</i>
+                                          </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+
+
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- End Single product -->
+                  </div>
+                </div>
+                <!-- End listview products -->
+              </div>
+            </div>
+            <!-- End category page product lists -->
+          </div>
+          <!-- End category page right sidebar -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End category page area -->
+</section>

@@ -1,0 +1,58 @@
+/*Header top area css*/
+
+.header-top {
+    align-items: center;
+    display: flex;
+    height: auto;
+    .row {
+        display: flex;
+        align-items: center;
+        height: auto;
+        @media (max-width: 991px) {
+            display: block;
+        }
+    }
+    >div.row {
+        align-items: center;
+        display: flex;
+    }
+    .header-top-inner {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo {
+        padding: 0 15px;
+        img {
+            width: auto;
+            height: 47px;
+        }
+
+    }
+    .header-menu {
+        color: #fff;
+        align-items: center;
+        display: flex;
+        position: relative;
+        height: auto;
+        list-style: none;
+        ul {
+            list-style: none;
+            justify-content: space-around;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            li {
+                margin-top: 15px;
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
+}
+
+
+/*header top area css*/

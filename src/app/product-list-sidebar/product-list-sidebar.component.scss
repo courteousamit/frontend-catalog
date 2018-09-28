@@ -1,0 +1,66 @@
+
+/* Category page left sidebar */
+
+.cp-left-single .cp-left-title {
+    border-bottom: 1px solid #e0e0e0;
+    color: #000;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.cp-left-sidebar .cp-left-single+.cp-left-single {
+    margin-top: 70px;
+}
+
+.cp-left-single ul li a {
+    color: #000;
+    font-size: 12px;
+    line-height: 26px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.cp-left-single ul li a:hover {
+    color: #727272;
+}
+
+.cp-category-body ul li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.cp-category-body>ul li+li a {
+    border-top: 1px solid #e0e0e0;
+}
+
+.cp-category-body ul li a i.fa {
+    float: right;
+    font-size: 12px;
+    line-height: 60px;
+}
+
+.cp-category-sub {
+    display: none;
+    height: 100%;
+    left: 0;
+    position: relative;
+    top: 100%;
+    width: 100%;
+}
+
+.cp-category-body>ul>li {
+    position: relative;
+}
+
+.cp-category-sub>li>a {
+    padding-left: 25px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.cp-category-sub>li.current>ul.cp-category-sub {
+    display: block;
+    height: 100%;
+}
