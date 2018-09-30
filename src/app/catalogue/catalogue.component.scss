@@ -3,12 +3,18 @@
     @media (max-width: 991px) {
         margin-top: 5px;
     }
-
 }
 
 .product-action {
     display: flex;
     justify-content: flex-start;
+    @media (max-width: 767px) {
+        justify-content: center;
+        li {
+            float: left;
+            padding-top: 15px;
+        }
+    }
 }
 
 .full-width-list {
@@ -19,7 +25,6 @@
             margin: 0 auto;
         }
     }
-
 }
 
 .single-product.full-width-list {
@@ -27,10 +32,12 @@
     @media (max-width: 991px) {
         display: block;
     }
+    @media (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .product-info-section {
-
     @media(min-width: 1200px) and (max-width: 1345px) {
         width: 100%;
     }
